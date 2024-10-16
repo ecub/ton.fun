@@ -24,7 +24,7 @@
             <h1>Community Takeover of Ton.fun</h1>
             <p>Ton.fun project has been entrusted to the Meridian for a community takeover! Active development is currently underway, and exciting updates will be coming soon.</p>
             <div class="social-buttons">
-                <a href="https://t.me/TonFunBot" target="_blank" class="social-btn">Waitlist Bot</a>
+                <a href="https://t.me/TonFunBot" target="_blank" class="social-btn animation">Waitlist Bot</a>
                 <a href="https://tonfun.gitbook.io/docs" target="_blank" class="social-btn">Gitbook</a>
                 <a href="https://tpi.wtf" target="_blank" class="social-btn">Token Producers Institute</a>
                 <a href="https://t.me/tondotfun" target="_blank" class="social-btn">Telegram Channel</a>
@@ -114,6 +114,23 @@ p {
     justify-content: center;
     align-items: center;
     font-weight: 600;
+}
+
+.animation {
+    position: relative;
+}
+.animation::before {
+    content: "";
+    position: absolute;
+    top: -36px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 48px;
+    height: 48px;
+    background-image: url('alien.gif');
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none;
 }
 
 .social-btn:hover {
